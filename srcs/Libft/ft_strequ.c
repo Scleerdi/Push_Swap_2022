@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/29 17:02:09 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/08/12 15:30:08 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/08/12 15:42:27 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,5 @@ int	ft_strequ(char const *s1, char const *s2)
 	r = ft_strcmp(st1, st2);
 	if (r != 0)
 		return (0);
-	else
-		return (1);
+	return (1);
 }
