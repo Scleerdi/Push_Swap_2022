@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/02/06 16:31:25 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/08/01 15:49:45 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/08/12 15:28:38 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,14 +55,14 @@ int	checker(t_stacks *ab)
 	char	*line;
 	int		ret;
 
-	line = NULL;
+	line = ft_strdup("");
 	ret = 1;
-	while (ret == 1)
+	while (line)
 	{
-		ret = ft_get_next_line(0, &line);
-		if (ret == -1)
+		line = ft_get_next_line(0);
+		if (!line)
 			return (-1);
-		if (ret != 0 && convert_to_command(ab, line) == 0 && *line != '\0')
+		if (convert_to_command(ab, line) == 0 && *line != '\0')
 		{
 			free(line);
 			return (2);

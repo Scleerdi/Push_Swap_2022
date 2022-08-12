@@ -6,7 +6,7 @@
 #    By: scleerdi <scleerdi@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2021/11/08 14:23:00 by scleerdi      #+#    #+#                  #
-#    Updated: 2022/07/27 15:00:36 by scleerdi      ########   odam.nl          #
+#    Updated: 2022/08/12 15:34:16 by scleerdi      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,12 +14,12 @@ NAME = libft.a
 SOURCE = atoi bzero isalnum isalpha isascii isdigit isprint abs isblank \
 		putchar_fd putendl_fd putnbr_fd putstr_fd strchr strjoin strlcpy \
 		strlen strnstr tolower toupper strcpy memset memmove memcpy \
-		strrchr strncmp strlcat memchr memcmp calloc strdup strndup \
+		strrchr strcmp strncmp strlcat memchr memcmp calloc strdup strndup \
 		substr strcat strtrim itoa split strmapi striteri isspace \
 		isupper islower strnew num_len strnlen strclen get_next_line \
 		lstnew lstadd_front lstsize lstadd_back itoa_base printf \
 		lstlast lstiter lstdelone lstclear lstmap sort_int_tab \
-		puthex_fd utoa_base a_is_int
+		puthex_fd utoa_base a_is_int min max memalloc strequ  \
 
 SOURCE := $(SOURCE:%=ft_%.c)
 OBJECT := $(SOURCE:%.c=%.o)

@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/25 12:13:07 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/06/27 13:49:39 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/08/12 15:30:22 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_sort_int_tab(int *tab, unsigned int size);
+char			*ft_get_next_line(const int fd);
 char			*ft_strnew(size_t size);
 char			*ft_strcat(char *s1, const char *s2);
 char			*ft_strtrim(const char *s);
