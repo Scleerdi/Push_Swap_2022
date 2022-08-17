@@ -6,11 +6,12 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/02/06 16:31:25 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/08/12 15:28:38 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/08/17 17:36:28 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+#include <stdio.h>
 
 /*
 **	Converts the written commands to executable commands
@@ -57,10 +58,10 @@ int	checker(t_stacks *ab)
 
 	line = ft_strdup("");
 	ret = 1;
-	while (line)
+	while (ret == 1)
 	{
-		line = ft_get_next_line(0);
-		if (!line)
+		ret = get_next_line(0, &line);
+		if (ret == -1)
 			return (-1);
 		if (convert_to_command(ab, line) == 0 && *line != '\0')
 		{

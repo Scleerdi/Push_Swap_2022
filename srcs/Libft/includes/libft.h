@@ -6,7 +6,7 @@
 /*   By: scleerdi <scleerdi@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/08 14:22:55 by scleerdi      #+#    #+#                 */
-/*   Updated: 2022/07/27 15:00:25 by scleerdi      ########   odam.nl         */
+/*   Updated: 2022/08/17 15:45:48 by scleerdi      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ int			ft_putendl_fd(char const *s, int fd);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 int			ft_puthex_fd(unsigned int n, int fd);
+int			ft_strequ(const char *s1, const char *s2);
+int			ft_strcmp(const char *s1, const char *s2);
 char		*ft_itoa(int n);
 char		*ft_strnew(size_t n);
 char		*ft_strdup(const char *s1);
